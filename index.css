@@ -1,0 +1,236 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.logo-img {
+    width: 7%;
+    height: 70px;
+}
+.hero {
+    background-color: #0E0F19;
+    height: 100vh;
+    color: white;
+    font-size: 20px;
+}
+.hero nav {
+    display: flex;
+    justify-content: space-around;
+    padding: 8px;
+    align-items: center;
+}
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    width: 30%;
+}
+
+nav ul li {
+    list-style-type: none;
+}
+.hero nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+.mid-content {
+    display: flex;
+    justify-content: space-around;
+    height: 100%;
+    align-items: center;
+    margin-bottom: 200px;
+}
+.mid-content h1 , .mid-content p {
+    margin-bottom: 10px;
+}
+.left-content h1 {
+    font-size: 100px;
+    letter-spacing: 3px;
+}
+.left-content p {
+    font-size: 30px;
+    letter-spacing: 5px;
+}
+.right-content div {
+    margin: 15px 0px;
+}
+.left-content , .right-content {
+    margin-bottom: 100px;
+}
+.button {
+    background-color: aqua;
+    color: black;
+    height: 50px;
+    width: 150px;
+    border-radius: 25px;
+    text-align: center;
+    padding-top: 12px ;
+    margin-top: 20px;
+}
+.mid-content div a {
+    text-decoration: none;
+    color: black;
+}
+.button:hover {
+    cursor: pointer;
+    background-color: rgb(129, 247, 247);
+}
+.button:active {
+    background-color: chartreuse;
+    color: black;
+}
+
+.sub-section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 100px 80px;
+}
+.info {
+    width: 60%;
+}
+.my-img img {
+    height: 320px;
+    width: 300px;
+    border-radius: 50%;
+}
+.info h2 {
+    font-size: 65px;
+}
+
+.info p {
+    margin-top: 15px;
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.project-card {
+    width: 20%;
+    box-shadow: 5px 5px 10px rgb(153, 152, 152);
+    background-color: #fdfbf6;
+    transition: 1s;
+}
+.project-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.project-wrapper {
+    text-align: center;
+    margin: 100px 80px;
+}
+.project-wrapper > h2 {
+    margin-bottom: 40px;
+}
+.project-img {
+    margin-top: 15px;
+    height: 250px;
+    width: 250px;
+    border-radius: 250px;
+}
+.project-card h3 , .project-card p {
+    margin: 10px 0px;
+}
+.project-card p a {
+    text-decoration: none;
+    color: #000;
+}
+hr {
+    margin: 0px 20px;
+}
+.project-card:hover {
+    transform: scale(1.05);
+}
+footer {
+    text-align: center;
+    font-size: 20px;
+    margin: 50px 0px;
+}
+footer p a {
+    text-decoration: none;
+    color: black;
+}
+@media (max-width : 1400px) {
+    .project-img {
+        height: 200px;
+        width: 200px;
+    }
+}
+@media (max-width : 1200px) {
+    .project-img {
+        height: 150px;
+        width: 150px;   
+    }
+}
+@media (max-width : 1000px) {
+    .project-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .project-card {
+        width: 50%;
+        margin-top: 20px;
+    }
+    .project-wrapper {
+        margin: 0px;
+    }
+}
+@media (max-width: 600px) {
+    .project-card {
+        width: 90%;
+    }
+    .project-wrapper {
+        margin: 50px 20px;
+    }
+    .sub-section {
+        display: flex;
+        flex-direction: column-reverse;
+        margin: 50px 10px;
+    } 
+    .info h2 {
+        font-size: 30px;
+    }
+    .info p {
+        margin-top: 8px;
+        font-size: 15px;
+        text-align: justify;
+    }
+    .my-img img {
+        height: 200px;
+        width: 200px;
+        border-radius: 200px;
+    }
+    .mid-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 100vh;
+        align-items: center;
+    }
+    .right-content {
+        display: inline-flex;
+    }
+    .right-content div {
+        margin: 50px 10px;
+    }
+    .left-content {
+        margin-bottom: 0px;
+    }
+    .left-content h1 {
+        font-size: 40px;
+    }
+    .left-content p {
+        font-size: 20px;
+    }
+    .hero nav ul {
+        display: none;
+    }
+    .logo-img {
+        width: 100px;
+    }
+}
